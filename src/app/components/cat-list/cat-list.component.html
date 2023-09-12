@@ -1,0 +1,11 @@
+<ion-card  *ngFor="let item of catList">
+  <ion-card-content>
+ 
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img alt="Silhouette of mountains" [src]="item.img" />
+        </ion-thumbnail>
+        <ion-label>{{item.name}}</ion-label>
+      </ion-item>
+  </ion-card-content>
+</ion-card>

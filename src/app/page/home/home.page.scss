@@ -1,0 +1,10 @@
+.bg-button{
+    background-color: rgba(190, 248, 226,0.7);
+    border-radius: 50px;
+    --swiper-pagination-color: var(--swiper-theme-color,#5ecafc);
+    --swiper-pagination-bullet-inactive-color: #b3e7ff;
+}
+swiper-container{
+    height: 250px;
+    background-color: aquamarine;
+}
