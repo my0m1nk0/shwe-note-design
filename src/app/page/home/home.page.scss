@@ -4,7 +4,15 @@
     --swiper-pagination-color: var(--swiper-theme-color,#5ecafc);
     --swiper-pagination-bullet-inactive-color: #b3e7ff;
 }
-swiper-container{
-    height: 250px;
-    background-color: aquamarine;
+.scroll-items {
+  justify-content: flex-start; // changed
+  flex-wrap: nowrap;
+  overflow-x: scroll !important;
+  overflow-y: hidden;
+  --box-shadow:3px;
+}
+.scroll-items ion-col { // added
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 0.3rem;
 }

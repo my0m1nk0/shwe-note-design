@@ -18,19 +18,19 @@
     <swiper-container
         [loop]="true"
         [zoom]="true"
-        [pagination]="true">       
+        [pagination]="true">
         <swiper-slide *ngFor="let image of images">
             <div class="swiper-image-zoom">
                 <img [src]="image"/>
             </div>
         </swiper-slide>
-       
+
     </swiper-container>
-      
+
     <ion-grid>
         <ion-row>
           <ion-col>
-            <h2>Discover</h2>
+            <h2>Categories</h2>
           </ion-col>
           <ion-col size="auto">
             <div style="width: 100px;">
@@ -40,89 +40,61 @@
         </ion-row>
     </ion-grid>
 
-    <ion-content>
-        <ion-card color="primary">
-            <ion-card-header>
-              <ion-card-title>Card Title</ion-card-title>
-              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-            </ion-card-header>
-          
-            <ion-card-content> Card Content </ion-card-content>
-          </ion-card>
-          
-          <ion-card color="secondary">
-            <ion-card-header>
-              <ion-card-title>Card Title</ion-card-title>
-              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-            </ion-card-header>
-          
-            <ion-card-content> Card Content </ion-card-content>
-          </ion-card>
-          
-          <ion-card color="tertiary">
-            <ion-card-header>
-              <ion-card-title>Card Title</ion-card-title>
-              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-            </ion-card-header>
-          
-            <ion-card-content> Card Content </ion-card-content>
-          </ion-card>
-          
-          <ion-card color="success">
-            <ion-card-header>
-              <ion-card-title>Card Title</ion-card-title>
-              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-            </ion-card-header>
-          
-            <ion-card-content> Card Content </ion-card-content>
-          </ion-card>
-          
-          <ion-card color="warning">
-            <ion-card-header>
-              <ion-card-title>Card Title</ion-card-title>
-              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-            </ion-card-header>
-          
-            <ion-card-content> Card Content </ion-card-content>
-          </ion-card>
-          
-          <ion-card color="danger">
-            <ion-card-header>
-              <ion-card-title>Card Title</ion-card-title>
-              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-            </ion-card-header>
-          
-            <ion-card-content> Card Content </ion-card-content>
-          </ion-card>
-          
-          <ion-card color="light">
-            <ion-card-header>
-              <ion-card-title>Card Title</ion-card-title>
-              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-            </ion-card-header>
-          
-            <ion-card-content> Card Content </ion-card-content>
-          </ion-card>
-          
-          <ion-card color="medium">
-            <ion-card-header>
-              <ion-card-title>Card Title</ion-card-title>
-              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-            </ion-card-header>
-          
-            <ion-card-content> Card Content </ion-card-content>
-          </ion-card>
-          
-          <ion-card color="dark">
-            <ion-card-header>
-              <ion-card-title>Card Title</ion-card-title>
-              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-            </ion-card-header>
-          
-            <ion-card-content> Card Content </ion-card-content>
-          </ion-card>
-    </ion-content>
+    <ion-row scrollX="true" class="scroll-items">
+      <ion-col *ngFor="let item of lists">
+        <!-- Items -->
+        <ion-button color="light" class="item-fab" (click)="selectItem(item)">
+          <ion-label class="ion-text-wrap">{{
+            item.name
+          }}</ion-label>
+        </ion-button>
+      </ion-col>
+    </ion-row>
 
-    
-      
+    <ion-grid style="margin: 0; padding: 0;">
+      <ion-row>
+        <ion-col>
+          <h2>Newly Added</h2>
+        </ion-col>
+        <ion-col size="auto">
+          <div style="width: 100px;">
+              <ion-button fill="clear">More</ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+
+  <ion-row scrollX="true" class="scroll-items" style="margin: 0;">
+    <ion-col *ngFor="let img of images" style="padding: 0;">
+      <!-- Items -->
+      <ion-card style="width: 150px;">
+        <img alt="Silhouette of mountains" [src]="img"/>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-grid style="margin: 0; padding: 0;">
+    <ion-row>
+      <ion-col>
+        <h2>Free Books</h2>
+      </ion-col>
+      <ion-col size="auto">
+        <div style="width: 100px;">
+            <ion-button fill="clear">More</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+</ion-grid>
+
+<ion-row scrollX="true" class="scroll-items" style="margin: 0;">
+  <ion-col *ngFor="let img of images" style="padding: 0;">
+    <!-- Items -->
+    <ion-card style="width: 150px;">
+      <img alt="Silhouette of mountains" [src]="img"/>
+    </ion-card>
+  </ion-col>
+</ion-row>
+
+
+
 </ion-content>

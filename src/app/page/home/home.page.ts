@@ -15,9 +15,43 @@ export class HomePage {
     "https://scontent.frgn14-1.fna.fbcdn.net/v/t39.30808-6/376766784_751848616953935_9160861070322363092_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=49d041&_nc_ohc=J2FZxlyfR-kAX_6vDoR&_nc_ht=scontent.frgn14-1.fna&oh=00_AfDlMQV_d5tHgMISHKuB6lRWrvTTYXFUZ2pA1lqnA2ngBA&oe=6505FC6A",
     "https://scontent.frgn14-1.fna.fbcdn.net/v/t39.30808-6/376876186_751848833620580_4091036773893418422_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=49d041&_nc_ohc=jJd4sv6K5VcAX--eV-F&_nc_ht=scontent.frgn14-1.fna&oh=00_AfB4Szk8knOlo5NmN2LNbLRp9DrtQMUb9VTKvUX_4rnuDQ&oe=65060CB9"
   ]
-  swiperSliderChange(slider:any){
-    console.log(slider);
+  cards=[
+    {
+      name:"ရောင်းအားအကောင်းဆုံးစာအုပ်များ"
+    },
+    {
+      name:"ရောင်းအားအကောင်းဆုံးစာအုပ်များ"
+    },
+    {
+      name:"ရောင်းအားအကောင်းဆုံးစာအုပ်များ"
+    },
+    {
+      name:"ရောင်းအားအကောင်းဆုံးစာအုပ်များ"
+    },
+    {
+      name:"ရောင်းအားအကောင်းဆုံးစာအုပ်များ"
+    },
+  ];
+  lists=[
+    {
+      name:"အောင်မြင်တိုးတက်ရေး"
+    },
+    {
+      name:"ရောင်းအားအကောင်းဆုံးစာအုပ်များ"
+    },
+    {
+      name:"ရောင်းအားအကောင်းဆုံးစာအုပ်များ"
+    },
+    {
+      name:"ရောင်းအားအကောင်းဆုံးစာအုပ်များ"
+    },
+    {
+      name:"ရောင်းအားအကောင်းဆုံးစာအုပ်များ"
+    },
+  ];
+  selectItem(item:any){
+
   }
-  
+
 
 }
